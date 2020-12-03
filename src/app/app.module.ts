@@ -1,30 +1,40 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { Landing } from './core/landing/landing.component';
-import { SiteComponent } from './core/site/site.component';
+import { LandingComponent } from './core/containers/landing/landing.component';
+import { SiteComponent } from './core/containers/site/site.component';
 import { HeaderComponent } from './shared/header/header.component';
-import { RouterComponent } from './core/site/router/router.component';
-import { CatalogComponent } from './core/site/router/catalog/catalog.component';
-import { ItemDetailsComponent } from './core/site/router/item-details/item-details.component';
-import { CartComponent } from './core/site/router/cart/cart.component';
+import { RouterComponent } from './core/components/router/router.component';
+import { CatalogComponent } from './core/containers/catalog/catalog.component';
+import { ItemDetailsComponent } from './core/components/item-details/item-details.component';
+import { CartComponent } from './core/containers/cart/cart.component';
+import { CatalogItemComponent } from './core/components/catalog-item/catalog-item.component';
+import { DetailsComponent } from './core/containers/details/details.component';
+import { ItemDetailsActionsComponent } from './core/components/item-details-actions/item-details-actions.component';
+import { CartItemComponent } from './core/components/cart-item/cart-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    Landing,
+    LandingComponent,
     SiteComponent,
     HeaderComponent,
     RouterComponent,
     CatalogComponent,
     ItemDetailsComponent,
-    CartComponent
+    CartComponent,
+    CatalogItemComponent,
+    DetailsComponent,
+    ItemDetailsActionsComponent,
+    CartItemComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

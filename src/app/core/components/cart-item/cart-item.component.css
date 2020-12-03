@@ -1,0 +1,9 @@
+.cartItem {
+  display: flex;
+  border-bottom: 1px solid lightsteelblue;
+  padding: 20px;
+}
+
+.cartItemImage {
+  margin-right: 40px;
+}
