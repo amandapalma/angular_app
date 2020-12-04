@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {CatalogItem} from '../../../shared/models/catalog-item.model';
 
 @Component({
   selector: 'app-catalog-item',
@@ -6,10 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./catalog-item.component.css']
 })
 export class CatalogItemComponent implements OnInit {
+constructor() { }
 
-  constructor() { }
-
-  ngOnInit(): void {
+ngOnInit(): void {
   }
 
 }

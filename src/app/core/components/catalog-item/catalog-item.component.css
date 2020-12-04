@@ -2,11 +2,15 @@
   background-color: darkslategrey;
   width: 150px;
   height: 150px;
+  border: 2px dotted violet;
 }
 
-.catalogItemCpntainer:hover {
+.catalogItemContainer:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .catalogItem {
   margin: 0 auto;
+  object-fit: cover;
+  opacity: 50%;
+  border: 3px solid red;
 }

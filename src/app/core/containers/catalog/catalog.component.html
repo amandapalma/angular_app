@@ -1,4 +1,14 @@
-<div class="catalogList">
-  <p>catalog works!</p>
-  <app-catalog-item></app-catalog-item>
+<p>catalog works!</p>
+<div class="catalogList" *ngFor="let item of catalogItems">
+  <!-- <app-catalog-item></app-catalog-item> -->
+  <a href="#" alt="go to item details">
+    <div class="catalogItemContainer">
+      <img
+        class="catalogItem"
+        src="{{ item.imagePath }}"
+        alt="{{ item.name }}"
+      />
+      <hr />
+    </div>
+  </a>
 </div>
