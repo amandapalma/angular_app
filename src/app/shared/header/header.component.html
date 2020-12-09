@@ -1,16 +1,20 @@
 <header class="headerContainer">
   <div class="headerLogo">
     <a href="#" alt="go to home">
-      <img src="" alt="logo" />
+      <img
+        class="headerImage"
+        src="https://image.freepik.com/vector-gratis/rey-virus-holding-espadas-ilustracion-personaje-dibujos-animados-corona-mascota-concepto-virus-aislado_138676-860.jpg"
+        alt="logo"
+      />
     </a>
   </div>
   <nav>
     <ul class="navList">
       <li class="navItem">
-        <a href="#" alt="catalog">Catalog</a>
+        <a href="#" alt="catalog" (click)="onSelect('catalog')">Catalog</a>
       </li>
       <li class="navItem">
-        <a href="#" alt="catalog">Cart</a>
+        <a href="#" alt="cart" (click)="onSelect('cart')">Cart</a>
       </li>
     </ul>
   </nav>

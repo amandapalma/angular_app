@@ -1,0 +1,22 @@
+.btnContainer {
+  display: flex;
+}
+
+.btn {
+  margin-right: 10px;
+  background-color: darkcyan;
+  border: none;
+  padding: 5px;
+}
+
+.btn:hover {
+  background-color: cyan;
+}
+.btn:active {
+  background-color: salmon;
+  border: none;
+  outline: none;
+}
+.btn:focus {
+  outline: none;
+}
