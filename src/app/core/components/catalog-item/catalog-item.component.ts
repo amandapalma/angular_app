@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import {CatalogItem} from '../../../shared/models/catalog-item.model';
 
 @Component({
@@ -7,6 +7,8 @@ import {CatalogItem} from '../../../shared/models/catalog-item.model';
   styleUrls: ['./catalog-item.component.css']
 })
 export class CatalogItemComponent implements OnInit {
+  @Input()
+  catalogItem: CatalogItem;
 constructor() { }
 
 ngOnInit(): void {
