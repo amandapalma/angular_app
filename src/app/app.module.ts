@@ -15,7 +15,7 @@ import { CatalogItemComponent } from './core/components/catalog-item/catalog-ite
 import { DetailsComponent } from './core/containers/details/details.component';
 import { ItemDetailsActionsComponent } from './core/components/item-details-actions/item-details-actions.component';
 import { CartItemComponent } from './core/components/cart-item/cart-item.component';
-
+// import {CatalogService} from '../app/core/containers/catalog';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +36,7 @@ import { CartItemComponent } from './core/components/cart-item/cart-item.compone
     AppRoutingModule,
     FormsModule
   ],
+  // providers: [CatalogService],
   providers: [],
   bootstrap: [AppComponent]
 })

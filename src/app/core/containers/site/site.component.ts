@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./site.component.css']
 })
 export class SiteComponent implements OnInit {
-  loadedOption = 'catalog';
+//   loadedOption = 'catalog';
 
-OnNavigate(option: string){this.loadedOption = option; }
+// OnNavigate(option: string){this.loadedOption = option; }
 
   constructor() { }
 

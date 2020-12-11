@@ -8,7 +8,7 @@ import {CatalogItem} from '../../../shared/models/catalog-item.model';
 })
 export class CatalogItemComponent implements OnInit {
   @Input()
-  catalogItem: CatalogItem;
+catalogItem!: CatalogItem;
 constructor() { }
 
 ngOnInit(): void {
