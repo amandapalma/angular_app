@@ -1,4 +1,12 @@
 <section class="detailSection">
   <p>details works!</p>
   <app-item-details></app-item-details>
+  <!---->
+  <app-item-details
+    *ngIf="itemSelected; else infoText"
+    [catalogItem="itemSelected"
+    ]
+  ></app-item-details>
+  <ng-template #infoText><p>No details about the selected item</p></ng-template>
 </section>
+<!---->

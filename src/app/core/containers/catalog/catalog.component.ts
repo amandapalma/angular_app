@@ -10,12 +10,12 @@ import {CatalogService} from '../catalog/catalog.service';
 
 })
 export class CatalogComponent implements OnInit {
-  catalogItems: CatalogItem [];
+catalogItems: CatalogItem [];
 
 
 constructor(private catalogService: CatalogService) { }
 
-ngOnInit(): void {
+ngOnInit() {
   this.catalogItems = this.catalogService.getCatalogItems();
   }
 

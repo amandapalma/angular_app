@@ -1,5 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
+import {CatalogItem} from '../../../shared/models/catalog-item.model';
+import { CatalogService } from '../catalog/catalog.service';
+
 
 @Component({
   selector: 'app-details',
@@ -7,8 +10,8 @@ import {ActivatedRoute} from '@angular/router';
   styleUrls: ['./details.component.css']
 })
 export class DetailsComponent implements OnInit {
-
-  constructor() { }
+  // @Input() catalogItem: CatalogItem; //
+  constructor(private catalogService: CatalogService) { } //
 
   ngOnInit(): void {
   }
