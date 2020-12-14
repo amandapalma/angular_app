@@ -1,4 +1,8 @@
-<a alt="go to item details" style="cursor: pointer">
+<a
+  [routerLink]="['/catalog/details', catalogItem.id]"
+  alt="go to item details"
+  style="cursor: pointer"
+>
   <div class="catalogItemContainer">
     <img
       class="catalogItem"

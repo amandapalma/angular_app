@@ -8,7 +8,8 @@ import { DetailsComponent } from './core/containers/details/details.component';
 
 const routes: Routes = [
   {path: 'catalog', component: CatalogComponent},
-  {path: 'cart', component : CartComponent, children: [{path: 'details', component : DetailsComponent}]},
+  {path: 'cart', component : CartComponent, },
+  {path: 'catalog/details/:id', component : DetailsComponent},
   {path: '', redirectTo: '/catalog', pathMatch: 'full'},
 ];
 
